@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>PRUEBA</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <p>Escribe aqui: <input type="text" id="from" value=""</a></p>
+    <div id ="to">
+  </body>
+  <script>
+    write = document.getElementById("to");
+    el = document.getElementById("from");
+
+    handler = function (e){
+      write.style.background = this.value;
+    }
+
+    el.addEventListener('input',handler);
+  </script>
+
+  <style>
+
+    #to {
+      background: #ff0000;
+      height: 100px;
+    }
+
+  </style>
+</html>
